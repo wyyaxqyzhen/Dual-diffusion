@@ -1,0 +1,13 @@
+CUDA_VISIBLE_DEVICES=0 python main.py \
+ --model_name corediff \
+ --run_name 8cgspect_10t \
+ --batch_size 2 \
+ --max_iter 150000 \
+ --test_dataset spect_8cg \
+ --test_ids "0,8,24,32,80,88,136,144,168,192,1,9,25,33,81,89,137,145,169,193,2,10,26,34,82,90,138,146,170,194,3,11,27,35,83,91,139,147,171,195,4,12,28,36,84,92,140,148,172,196,5,13,29,37,85,93,141,149,173,197,6,14,30,38,86,94,142,150,174,198,7,15,31,39,87,95,143,151,175,199" \
+ --context \
+ --only_adjust_two_step \
+ --dose 8cg \
+ --image_size 36 \
+ --save_freq 2500 \
+ --train_dataset spect_8cg
